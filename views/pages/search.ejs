@@ -5,9 +5,12 @@
     <% include ../partials/header %>
     <main>
         <form id="search" action="/results" method="post">
-            <label><span>Search for:</span><input type="text" name="query"></label>
+            <label><span>Search for:</span><input type="text" name="query" onkeyup="getResults(this.value)"></label>
             <input class="submit" type="submit" value="submit">
         </form>
+        <div id="pre-results">
+            <% include ../partials/users %>
+        </div>
     </main>
 </body>
 </html>

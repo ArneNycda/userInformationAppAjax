@@ -16,6 +16,10 @@ main {
     width: 51rem;
 }
 
+#pre-results {
+    margin-top: 20px;
+}
+
 .user-item, .user-title {
     float: left;
     width: 15rem;
