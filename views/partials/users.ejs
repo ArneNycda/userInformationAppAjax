@@ -1,0 +1,31 @@
+<div id="users">
+    <div class="user-title first-name">First name:</div>
+    <div class="user-title last-name">Last name:</div>
+    <div class="user-title email">E-mail address:</div>
+    <div style="clear: both;"></div>
+
+    <%
+    if ( users.length === 0 ) {
+    %>
+        
+        <div class="user-item no-user">No users found.</div>
+    
+    <% 
+    } else {
+        users.forEach((user, index) => { 
+            const background = index % 2 === 0 ? 'white' : 'gray';
+    %>
+
+            <div class=<%= background %>>
+                <div class="user-item first-name"><%= user.firstname %></div>
+                <div class="user-item last-name"><%= user.lastname %></div>
+                <div class="user-item email"><%= user.email %></div>
+                <div style="clear: both;"></div>
+            </div>
+    
+    <%
+        }); 
+    }
+    %>
+
+</div>

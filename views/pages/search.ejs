@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><% include ../partials/head %></head>
+<body>
+    <% include ../partials/header %>
+    <main>
+        <form id="search" action="/results" method="post">
+            <label><span>Search for:</span><input type="text" name="query"></label>
+            <input class="submit" type="submit" value="submit">
+        </form>
+    </main>
+</body>
+</html>

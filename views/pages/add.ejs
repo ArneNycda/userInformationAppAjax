@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><% include ../partials/head %></head>
+<body>
+    <% include ../partials/header %>
+    <main>
+        <form id="add-user" action="/users" method="post">
+            <label><span>First name:</span><input type="text" name="firstname"></label><br>
+            <label><span>Last name:</span><input type="text" name="lastname"></label><br>
+            <label><span>E-mail address:</span><input type="text" name="email"></label><br>
+            <input class="submit" type="submit" value="submit">
+        </form>
+    </main>
+</body>
+</html>

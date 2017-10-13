@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    margin: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+#users {
+    width: 51rem;
+}
+
+.user-item, .user-title {
+    float: left;
+    width: 15rem;
+    padding: 1rem 1rem;
+}
+
+.user-title {
+    background-color: gray;
+    font-weight: bold;
+}
+
+.gray {
+    background-color: lightgray;
+}
+
+span {
+    display: inline-block;
+    width: 120px;
+}
+
+h3 {
+    margin: 20px;
+}
+
+#add-user .submit {
+    margin: 20px 0px;
+}
